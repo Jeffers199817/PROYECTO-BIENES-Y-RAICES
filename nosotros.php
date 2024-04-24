@@ -1,49 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices</title>
-    <link rel="stylesheet" href="build/css/app.css">
+<?php
 
-</head>
+require 'includes/funciones.php';
+incluirTemplate('header');
 
-<body>
-
-    <header class=" header">
-        <div class="contenedor contendio-header">
-            <div class="barra">
-                <a href="index.html">
-                    <img src="/build/img/logo.svg" alt=" Logotipo de Bienes y Raices.">
-                </a>
-
-            <div class="mobile-menu">
-                <img src="/build/img/barras.svg" alt="icono menu responsive">
-            </div>
-            
-            <div class="derecha">
-                <img class="dark-mode-boton" src="/build/img/dark-mode.svg">
-            
-            
-            
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-            
-                </nav>
-            </div>
-            </div><!--Cierre barra-->
-
-
-
-        </div>
-    </header> <!--FIN DE HEADER-->
-
-
-
+?>
 
     <main class="contenedor seccion">
         
@@ -125,36 +86,6 @@
 
 </section><!--FIN DE MAIN-->
 
-
-
-    <footer class="footer seccion">
-
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-
-            </nav>
-
-            <p class="copyright">El contenido de este sitio web, incluidos textos, imágenes, gráficos y otros elementos,
-                está protegido por las leyes de
-                propiedad intelectual y no puede ser reproducido, distribuido, transmitido, exhibido, publicado o
-                transmitido sin el
-                permiso previo por escrito de MILENYUM-BIRA &copy;</p>
-        </div>
-
-    </footer><!--FIN DE FOOTER-->
-
-
-
-    <script src="build/js/bundle.min.js">
-
-    </script><!--FIN DE JAVASCRIPT-->
-
-
-
-</body>
-
-</html>
+<?php
+incluirTemplate('footer');
+?>
