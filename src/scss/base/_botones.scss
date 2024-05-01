@@ -13,6 +13,11 @@
 }
 
 
-.boton-rojo{
-    @include boton($rojoOscuro, inline-block);
+.boton-rojo-block{
+    @include boton($rojoOscuro, block);
+    width: 100%;
+}
+
+.boton-verde-block{
+    @include boton($verde, block);
 }
