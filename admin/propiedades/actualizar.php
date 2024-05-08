@@ -2,6 +2,16 @@
 
 <?php
 
+
+
+require '../../includes/funciones.php';
+
+$auth = estaAutenticado();
+if(!$auth){
+    header("location:/");
+}
+
+
 //validar la URL por ID válido 
 $id = $_GET['id'];
 $id = filter_var($id, FILTER_VALIDATE_INT);
@@ -182,7 +192,6 @@ if($imagen['name']){
 
 
 
-require '../../includes/funciones.php';
 incluirTemplate('header');
 
 ?>
