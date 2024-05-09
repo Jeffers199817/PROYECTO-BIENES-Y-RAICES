@@ -4,13 +4,9 @@
 
 
 
-require '../../includes/funciones.php';
+require '../../includes/app.php';
 
-$auth = estaAutenticado();
-if(!$auth){
-    header("location:/");
-}
-
+estaAutenticado();
 
 //validar la URL por ID válido 
 $id = $_GET['id'];
@@ -24,7 +20,7 @@ if(!$id){
 
 //Base de datos
 
-require '../../includes/config/database.php';
+
 
 $db=conectarDB();
 
