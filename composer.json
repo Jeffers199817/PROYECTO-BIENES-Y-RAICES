@@ -13,10 +13,13 @@
             "email": "jefferson.alquinga1998@gmail.com"
         }
     ],
-    "require": {},
+ 
     "autoload": {
         "psr-4": {
             "App\\": "./classes"
         }
+    },
+    "require": {
+        "intervention/image": "2.5"
     }
 }

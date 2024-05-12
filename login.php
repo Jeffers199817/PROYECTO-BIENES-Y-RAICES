@@ -4,6 +4,8 @@
 
 require 'includes/app.php';
 
+
+
 $db=conectarDB();
 
 $errores =[ ];
